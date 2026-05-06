@@ -7,7 +7,9 @@ const config = {
 			filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 	},
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			split: true
+		})
 	}
 };
 
